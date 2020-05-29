@@ -1,4 +1,5 @@
-#include <UGSEngine.h>
+#include "UGSEngine/ugspch.h"
+#include "UGSEngine/UGSEngine.h"
 
 class Sandbox : public UGSEngine::Application {
 public:

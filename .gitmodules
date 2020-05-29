@@ -1,0 +1,6 @@
+[submodule "UGSEngine/vendor/spdlog"]
+	path = UGSEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "UGSEngine/vendor/GLFW"]
+	path = UGSEngine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
