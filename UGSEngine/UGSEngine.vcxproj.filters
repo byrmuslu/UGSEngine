@@ -1343,6 +1343,9 @@
     <ClCompile Include="src\UGSEngine\Application.cpp">
       <Filter>src\UGSEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\UGSEngine\ImGui\ImGuiBuild.cpp">
+      <Filter>src\UGSEngine\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\UGSEngine\ImGui\ImGuiLayer.cpp">
       <Filter>src\UGSEngine\ImGui</Filter>
     </ClCompile>

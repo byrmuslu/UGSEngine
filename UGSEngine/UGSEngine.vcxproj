@@ -81,7 +81,7 @@
       <PrecompiledHeaderFile>ugspch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>UGS_PLATFORM_WINDOWS;UGS_BUILD_DLL;GLFW_INCLUDE_NONE;UGS_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\glm;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -106,7 +106,7 @@ IF EXIST ..\bin\Debug-windows-x86_64\UGSEngine\UGSEngine.dll\ (xcopy /Q /E /Y /I
       <PrecompiledHeaderFile>ugspch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>UGS_PLATFORM_WINDOWS;UGS_BUILD_DLL;GLFW_INCLUDE_NONE;UGS_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\glm;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -134,7 +134,7 @@ IF EXIST ..\bin\Release-windows-x86_64\UGSEngine\UGSEngine.dll\ (xcopy /Q /E /Y 
       <PrecompiledHeaderFile>ugspch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>UGS_PLATFORM_WINDOWS;UGS_BUILD_DLL;GLFW_INCLUDE_NONE;UGS_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\glm;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -591,6 +591,7 @@ IF EXIST ..\bin\Dist-windows-x86_64\UGSEngine\UGSEngine.dll\ (xcopy /Q /E /Y /I 
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\UGSEngine\Application.cpp" />
+    <ClCompile Include="src\UGSEngine\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\UGSEngine\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\UGSEngine\Layer.cpp" />
     <ClCompile Include="src\UGSEngine\LayerStack.cpp" />

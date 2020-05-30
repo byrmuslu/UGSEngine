@@ -19,7 +19,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "UGSEngine/vendor/GLFW/include"
 IncludeDir["Glad"] = "UGSEngine/vendor/Glad/include"
 IncludeDir["ImGui"] = "UGSEngine/vendor/imgui"
-IncludeDir["ImGui"] = "UGSEngine/vendor/glm"
+IncludeDir["Glm"] = "UGSEngine/vendor/glm"
 
 include "UGSEngine/vendor/GLFW"
 include "UGSEngine/vendor/Glad"
@@ -53,7 +53,7 @@ project "UGSEngine"
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
 		"%{IncludeDir.ImGui}",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.Glm}"
 	}
 
 	links

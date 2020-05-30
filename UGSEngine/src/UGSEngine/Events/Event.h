@@ -1,6 +1,6 @@
 #pragma once
 #include "ugspch.h"
-#include "../Core.h"
+#include "UGSEngine/Core.h"
 
 
 namespace UGSEngine {
