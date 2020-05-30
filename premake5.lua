@@ -19,6 +19,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "UGSEngine/vendor/GLFW/include"
 IncludeDir["Glad"] = "UGSEngine/vendor/Glad/include"
 IncludeDir["ImGui"] = "UGSEngine/vendor/imgui"
+IncludeDir["ImGui"] = "UGSEngine/vendor/glm"
 
 include "UGSEngine/vendor/GLFW"
 include "UGSEngine/vendor/Glad"
@@ -29,18 +30,20 @@ project "UGSEngine"
 	kind "SharedLib"
 	language "C++"
 	cppdialect "C++17"
-	staticruntime "on"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	pchheader "UGSEngine/ugspch.h"
+	pchheader "ugspch.h"
 	pchsource "UGSEngine/src/ugspch.cpp"
 
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -49,7 +52,8 @@ project "UGSEngine"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -94,7 +98,7 @@ project "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++17"
-	staticruntime "on"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")

@@ -1,4 +1,4 @@
-#include "UGSEngine/ugspch.h"
+#include "ugspch.h"
 #include "Platform/Windows/WindowsWindow.h"
 
 #include "UGSEngine/Events/ApplicationEvent.h"

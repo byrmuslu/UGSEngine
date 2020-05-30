@@ -1,4 +1,4 @@
-#include "UGSEngine/ugspch.h"
+#include "ugspch.h"
 #include "Application.h"
 
 #include "UGSEngine/Input.h"
@@ -46,6 +46,7 @@ namespace UGSEngine {
 				layer->OnUpdate();
 
 			auto[x, y] = Input::GetMousePosition();
+
 
 			//UGS_CORE_TRACE("{0}, {1}", x, y);
 

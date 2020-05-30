@@ -1,7 +1,7 @@
-#include "UGSEngine/ugspch.h"
+#include "ugspch.h"
 #include "ImGuiLayer.h"
 
-#include "imgui.h"
+#include "UGSEngine/vendor/imgui/imgui.h"
 #include "Platform/OpenGL/ImGuiOpenGLRenderer.h"
 #include "UGSEngine/Application.h"
 

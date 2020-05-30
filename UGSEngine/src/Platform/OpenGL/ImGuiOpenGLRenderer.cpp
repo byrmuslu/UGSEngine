@@ -53,8 +53,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #endif
 
-#include "UGSEngine/ugspch.h"
-#include "imgui.h"
+#include "ugspch.h"
+#include "UGSEngine/vendor/imgui/imgui.h"
 #include "ImGuiOpenGLRenderer.h"
 #include "glad/glad.h"
 #include <stdio.h>
