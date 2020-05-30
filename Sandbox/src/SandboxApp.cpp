@@ -26,6 +26,7 @@ class Sandbox : public UGSEngine::Application {
 public:
 	Sandbox() {
 		PushLayer(new ELayer());
+		PushOverlay(new UGSEngine::ImGuiLayer());
 	}
 
 	~Sandbox() {

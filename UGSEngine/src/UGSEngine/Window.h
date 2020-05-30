@@ -1,5 +1,5 @@
 #pragma once
-#include "ugspch.h"
+#include "UGSEngine/ugspch.h"
 
 #include "UGSEngine/Core.h"
 #include "UGSEngine/Events/Event.h"

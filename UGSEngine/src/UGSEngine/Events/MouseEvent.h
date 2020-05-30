@@ -1,5 +1,6 @@
 #pragma once
 
+#include "UGSEngine/ugspch.h"
 #include "Event.h"
 namespace UGSEngine {
 

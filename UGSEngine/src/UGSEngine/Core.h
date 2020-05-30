@@ -10,6 +10,10 @@
 	#error UGS only support windows
 #endif
 
+#ifdef UGS_DEBUG
+#define UGS_ENABLE_ASSERTS
+#endif
+
 #ifdef UGS_ENABLE_ASSERTS
 #define UGS_ASSERT(x, ...) { if(!(x)) { UGS_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 #define UGS_CORE_ASSERT(x, ...) { if(!(x)) { UGS_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
@@ -19,3 +23,5 @@
 #endif
 
 #define BIT(x) (1 << x)
+
+#define UGS_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)

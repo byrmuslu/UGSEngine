@@ -17,11 +17,15 @@ namespace UGSEngine {
 
 		void OnEvent(Event& e);
 
+		inline static Application& Get() { return *s_Instance; }
+
 		void PushLayer(Layer* layer);
 		void PushOverlay(Layer* layer);
+
+		inline Window& GetWindow() { return *m_Window; }
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
-
+		static Application* s_Instance;
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
