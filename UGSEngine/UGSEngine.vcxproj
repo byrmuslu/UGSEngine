@@ -157,7 +157,9 @@ IF EXIST ..\bin\Dist-windows-x86_64\UGSEngine\UGSEngine.dll\ (xcopy /Q /E /Y /I 
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\UGSEngine\Input.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\UGSEngine\Application.h" />
     <ClInclude Include="src\UGSEngine\Core.h" />
@@ -167,15 +169,18 @@ IF EXIST ..\bin\Dist-windows-x86_64\UGSEngine\UGSEngine.dll\ (xcopy /Q /E /Y /I 
     <ClInclude Include="src\UGSEngine\Events\KeyEvent.h" />
     <ClInclude Include="src\UGSEngine\Events\MouseEvent.h" />
     <ClInclude Include="src\UGSEngine\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\UGSEngine\KeyCodes.h" />
     <ClInclude Include="src\UGSEngine\Layer.h" />
     <ClInclude Include="src\UGSEngine\LayerStack.h" />
     <ClInclude Include="src\UGSEngine\Log.h" />
+    <ClInclude Include="src\UGSEngine\MouseButtonCodes.h" />
     <ClInclude Include="src\UGSEngine\UGSEngine.h" />
     <ClInclude Include="src\UGSEngine\Window.h" />
     <ClInclude Include="src\UGSEngine\ugspch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\UGSEngine\Application.cpp" />
     <ClCompile Include="src\UGSEngine\ImGui\ImGuiLayer.cpp" />

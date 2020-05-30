@@ -22,7 +22,7 @@ namespace UGSEngine {
 		}
 
 		EVENT_CLASS_TYPE(WindowResize)
-			EVENT_CLASS_CATEGORY(EventCategoryApplication)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	private:
 		unsigned int m_Width, m_Height;
 	};
@@ -42,7 +42,7 @@ namespace UGSEngine {
 		AppTickEvent() = default;
 
 		EVENT_CLASS_TYPE(AppTick)
-			EVENT_CLASS_CATEGORY(EventCategoryApplication)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
 	class UGS_API AppUpdateEvent : public Event
@@ -51,7 +51,7 @@ namespace UGSEngine {
 		AppUpdateEvent() = default;
 
 		EVENT_CLASS_TYPE(AppUpdate)
-			EVENT_CLASS_CATEGORY(EventCategoryApplication)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
 	class UGS_API AppRenderEvent : public Event
@@ -60,6 +60,6 @@ namespace UGSEngine {
 		AppRenderEvent() = default;
 
 		EVENT_CLASS_TYPE(AppRender)
-			EVENT_CLASS_CATEGORY(EventCategoryApplication)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 }

@@ -38,7 +38,7 @@ namespace UGSEngine {
 		m_Data.Width = props.Width;
 		m_Data.Height = props.Height;
 
-		UGS_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
+		//UGS_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
 		if (!s_GLFWInitialized)
 		{
@@ -51,7 +51,7 @@ namespace UGSEngine {
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		//UGS_CORE_ASSERT(status, "Failed to Initialize Glad!");
+		UGS_CORE_ASSERT(status, "Failed to Initialize Glad!");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 

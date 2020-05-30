@@ -11,8 +11,6 @@
 
 namespace UGSEngine {
 
-	
-
 	ImGuiLayer::ImGuiLayer()
 	{
 	}

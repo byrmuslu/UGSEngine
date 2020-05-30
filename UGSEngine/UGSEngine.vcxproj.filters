@@ -69,6 +69,10 @@
     <ClInclude Include="src\UGSEngine\ugspch.h">
       <Filter>UGSEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\UGSEngine\Input.h" />
+    <ClInclude Include="src\UGSEngine\MouseButtonCodes.h" />
+    <ClInclude Include="src\UGSEngine\KeyCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
@@ -95,5 +99,6 @@
     <ClCompile Include="src\UGSEngine\ugspch.cpp">
       <Filter>UGSEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>

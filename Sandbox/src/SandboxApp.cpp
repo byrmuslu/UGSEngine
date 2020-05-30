@@ -12,12 +12,13 @@ public:
 
 	void OnUpdate() override
 	{
-		UGS_INFO("ExampleLayer::Update");
+		if (UGSEngine::Input::IsKeyPressed(UGS_KEY_ENTER))
+			UGS_TRACE("Enter key is pressed!");
 	}
 
 	void OnEvent(UGSEngine::Event& event) override
 	{
-		UGS_TRACE("{0}", event);
+		//UGS_TRACE("{0}", event);
 	}
 
 };
