@@ -3,7 +3,7 @@
 #include "UGSEngine/Events/Event.h"
 
 namespace UGSEngine {
-	class UGS_API Layer {
+	class  Layer {
 	public:
 		Layer(const std::string& name = "Layer");
 		virtual ~Layer() = default;

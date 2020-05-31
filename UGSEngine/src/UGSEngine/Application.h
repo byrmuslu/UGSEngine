@@ -9,7 +9,7 @@
 #include "UGSEngine/ImGui/ImGuiLayer.h"
 
 namespace UGSEngine {
-	class UGS_API Application
+	class  Application
 	{
 	public:
 		Application();

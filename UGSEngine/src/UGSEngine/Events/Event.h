@@ -35,7 +35,7 @@ namespace UGSEngine {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
-	class UGS_API Event
+	class  Event
 	{
 		friend class EventDispatcher;
 	public:
@@ -52,7 +52,7 @@ namespace UGSEngine {
 		}
 	};
 
-	class UGS_API EventDispatcher
+	class  EventDispatcher
 	{
 	public:
 		EventDispatcher(Event& event)
